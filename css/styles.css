@@ -1,3 +1,150 @@
+.btn-main, .btn-main-s {
+  padding: 0.25rem 1.5rem;
+  border-radius: 0.25rem;
+  background-color: #00B4D9;
+  color: white;
+  border: solid 1px #00B4D9;
+  font-weight: 400;
+}
+.btn-main:hover, .btn-main-s:hover {
+  background-color: white;
+  color: #00B4D9;
+  border: solid 1px #00B4D9;
+}
+.btn-main-s {
+  font-size: 0.75rem;
+  padding: 0.1rem 1rem;
+}
 
+.main-menu {
+  margin-bottom: 0;
+  display: flex;
+  justify-content: center;
+  background-color: #f8f8f8;
+  padding: 1rem;
+  border-radius: 4px;
+}
+.main-menu li {
+  list-style: none;
+  margin-right: 2rem;
+}
+.main-menu a {
+  color: #333;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s ease-in-out;
+  position: relative;
+}
+.main-menu a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: -3px;
+  left: 0;
+  background-color: #00B4D9;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
+}
+.main-menu a:hover::before {
+  transform: scaleX(1);
+  visibility: visible;
+}
+.main-menu a:hover {
+  color: #00B4D9;
+}
+
+.icon-facebook i {
+  font-size: 1.25rem;
+  color: #00B4D9;
+  padding: 0.4rem 0.65rem;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2509803922);
+}
+.icon-facebook i:hover {
+  color: white;
+  background-color: #5A74A9;
+}
+
+.icon-instagram i {
+  font-size: 1.25rem;
+  color: #00B4D9;
+  padding: 0.4rem 0.65rem;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2509803922);
+}
+.icon-instagram i:hover {
+  color: white;
+  background-color: #F2035B;
+}
+
+.icon-linkedin i {
+  font-size: 1.25rem;
+  color: #00B4D9;
+  padding: 0.4rem 0.65rem;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2509803922);
+}
+.icon-linkedin i:hover {
+  color: white;
+  background-color: #0961B8;
+}
+
+.icon-whatsapp i {
+  font-size: 1.25rem;
+  color: #00B4D9;
+  padding: 0.4rem 0.65rem;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2509803922);
+}
+.icon-whatsapp i:hover {
+  color: white;
+  background-color: #3FDC5B;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.skills .icon {
+  color: #00B4D9;
+  font-size: 5rem;
+}
+.skills .description .title {
+  font-size: 1.5rem;
+}
+.skills .description .text {
+  color: #888;
+  font-weight: 600;
+}
+.skills .cta {
+  color: #00B4D9;
+  font-weight: 600;
+  margin-top: 3rem;
+}
+
+hmtl {
+  min-width: 100vw;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 5.6rem;
+  border-bottom: solid 1px #ddd;
+  align-items: center;
+}
+
+.logo img {
+  max-width: 13rem;
+}
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,31 @@
+@use "components";
+@mixin section-display{
+    width: 100%;
+    max-width: 992px;
+    margin: auto;
+    padding: 3rem;
+}
+
+hmtl{
+    min-width: 100vw;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.nav{
+    display:flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 5.6rem;
+    border-bottom: solid 1px #ddd;
+    align-items: center;
+    
+}
+
+.logo img{
+    max-width: 13rem;
+}
+
