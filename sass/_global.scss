@@ -6,21 +6,21 @@
     padding: 3rem;
 }
 
-hmtl{
+html{
     min-width: 100vw;
 }
 
 body{
     padding: 0;
     margin: 0;
+    padding-top: 5.6rem;
 }
 
 .nav{
-    position: fixed;
     top: 0;
     left: 0;
     z-index: 100;
-    display:flex;
+    position: fixed;
     justify-content: space-between;
     width: 100%;
     height: 5.6rem;
@@ -33,4 +33,127 @@ body{
 .logo img{
     max-width: 13rem;
 }
+
+.sec-home{
+    @include section-display();
+    max-width: 100%;
+    background: url(/assets/img/david.png) no-repeat;
+    background-size: cover;
+    background-position:0%;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    display: flex;
+    align-items: center;
+    .home-cta{
+        flex: 1;
+        padding: 4rem 0;
+        .cta-text{
+            color: components.$primary-color;
+        }
+        
+        .home-title{
+            margin: 14rem 0;
+            width: 20rem;
+            font-size: 3rem;
+            color: white;
+
+        }
+        .home-description{
+            width: 300px;
+            font-weight: 800;
+            color: white;
+
+            
+        }
+
+        .lead-magnet{
+            .input-col{
+                max-width: 200px;
+            }
+            
+        }
+    }
+    
+}
+
+
+
+.sec-footer-cta{
+
+    background: url(/assets/img/david.png) no-repeat;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    filter: brightness(0.6);
+    .footer-cta{
+        .cta-title{
+            width: 50%;
+            font-size: 2rem;
+        }
+        .cta-description{
+            font-size: 1.1rem;
+        }
+    }
+    
+}
+
+.sec-fueatures{
+    @include section-display();
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .intro{
+        text-align: center;
+
+        h3{
+            font-size: 1.8rem;
+        }
+        p{
+            font-size: 0.8rem;
+            color: #888;
+        }
+    }
+
+    .features{
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        .features-text{
+            padding: 2rem 0;
+            flex: 1;
+            .feature{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                .description{
+                    margin-left: 1rem;
+                    max-width: 20rem;
+                    .description-title{
+                        font-size: 1.15rem;
+                    }
+                    .description-text{
+                        font-size: 1rem;
+                        a{
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+
+        .image{
+            img{
+                max-width: 15rem;
+            }
+        }
+    }
+    
+} 
+
+
 
