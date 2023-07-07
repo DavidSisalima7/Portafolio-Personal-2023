@@ -138,6 +138,57 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2509803922);
 }
 
+.icon-desc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.icon-desc .icon {
+  padding: 0;
+  color: #00B4D9;
+  font-size: 4rem;
+}
+.icon-desc .title {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.benefit {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.benefit .card {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2509803922);
+  padding: 1rem 1rem;
+  transition: all 0.3s ease-in-out 0s;
+  height: 28rem;
+}
+.benefit .card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transform: translateY(-4px);
+}
+.benefit .icon {
+  color: #00B4D9;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 11rem;
+  height: 11rem;
+}
+.benefit .description .title {
+  font-size: 1.5rem;
+  margin: 2rem;
+}
+.benefit .description .text {
+  color: #888;
+  font-weight: 600;
+}
+
 html {
   min-width: 100vw;
 }
@@ -222,7 +273,7 @@ body {
   font-size: 1.1rem;
 }
 
-.sec-fueatures {
+.sec-fueatures, .sec-benefits .intro {
   width: 100%;
   max-width: 992px;
   margin: auto;
@@ -231,44 +282,44 @@ body {
   flex-direction: column;
   align-items: center;
 }
-.sec-fueatures .intro {
+.sec-fueatures .intro, .sec-benefits .intro .intro {
   text-align: center;
 }
-.sec-fueatures .intro h3 {
+.sec-fueatures .intro h3, .sec-benefits .intro .intro h3 {
   font-size: 1.8rem;
 }
-.sec-fueatures .intro p {
+.sec-fueatures .intro p, .sec-benefits .intro .intro p {
   font-size: 0.8rem;
   color: #888;
 }
-.sec-fueatures .features {
+.sec-fueatures .features, .sec-benefits .intro .features {
   display: flex;
   gap: 1rem;
   align-items: center;
 }
-.sec-fueatures .features .features-text {
+.sec-fueatures .features .features-text, .sec-benefits .intro .features .features-text {
   padding: 2rem 0;
   flex: 1;
 }
-.sec-fueatures .features .features-text .feature {
+.sec-fueatures .features .features-text .feature, .sec-benefits .intro .features .features-text .feature {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-.sec-fueatures .features .features-text .feature .description {
+.sec-fueatures .features .features-text .feature .description, .sec-benefits .intro .features .features-text .feature .description {
   margin-left: 1rem;
   max-width: 20rem;
 }
-.sec-fueatures .features .features-text .feature .description .description-title {
+.sec-fueatures .features .features-text .feature .description .description-title, .sec-benefits .intro .features .features-text .feature .description .description-title {
   font-size: 1.15rem;
 }
-.sec-fueatures .features .features-text .feature .description .description-text {
+.sec-fueatures .features .features-text .feature .description .description-text, .sec-benefits .intro .features .features-text .feature .description .description-text {
   font-size: 1rem;
 }
-.sec-fueatures .features .features-text .feature .description .description-text a {
+.sec-fueatures .features .features-text .feature .description .description-text a, .sec-benefits .intro .features .features-text .feature .description .description-text a {
   text-decoration: none;
 }
-.sec-fueatures .features .image img {
+.sec-fueatures .features .image img, .sec-benefits .intro .features .image img {
   max-width: 15rem;
 }
 
@@ -306,6 +357,49 @@ body {
   display: inline;
   font-size: 0.75rem;
   margin-right: 2rem;
+}
+
+.sec-benefits {
+  border-top: 1px solid #ddd;
+}
+.sec-benefits .intro p {
+  font-size: 0.8rem;
+  color: #888;
+}
+.sec-benefits .benefit-cards {
+  width: 100%;
+  padding: 0 2rem 2rem 2rem;
+}
+
+.sec-skills {
+  width: 100%;
+  background-color: #00B4D9;
+  color: white;
+  padding: 4rem;
+}
+.sec-skills .kpi {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+}
+.sec-skills .kpi img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 8rem;
+  height: 8rem;
+  transition: all 0.3s ease-in-out 0s;
+}
+.sec-skills .kpi img:hover {
+  transform: translateY(-4px);
+  max-width: 8rem;
+  height: 8rem;
+}
+.sec-skills .kpi .desc {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.6666666667);
 }
 
 /*# sourceMappingURL=styles.css.map */
