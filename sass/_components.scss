@@ -10,10 +10,11 @@
 
 @mixin btn-global{
     font-size: 1.25rem;
-    color: $primary-color;
+    color: black;
     padding: 0.4rem 0.65rem;
     border-radius: 50%;
     box-shadow: 0 0 10px #00000040;
+    background-color: white;
 }
 //Variables
 $primary-color: #00B4D9;
@@ -24,8 +25,8 @@ $primary-color: #00B4D9;
     background-color: $primary-color;
     color: white;
     border: solid 1px $primary-color;
-    font-weight: 400;
-    
+    font-weight: 500;
+    border-radius: 15px;
     &:hover{
         background-color: white;
         color: $primary-color;
@@ -153,7 +154,6 @@ $primary-color: #00B4D9;
 }
 
 .icon-sm{
-
     i{
         font-size: 1.25rem;
         color: $primary-color;

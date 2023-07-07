@@ -37,7 +37,7 @@ body{
 .sec-home{
     @include section-display();
     max-width: 100%;
-    background: url(/assets/img/david.png) no-repeat;
+    background: url(/assets/img/portada.JPG) no-repeat;
     background-size: cover;
     background-position:0%;
     width: 100%;
@@ -73,6 +73,7 @@ body{
             }
             
         }
+        
     }
     
 }
@@ -81,7 +82,7 @@ body{
 
 .sec-footer-cta{
 
-    background: url(/assets/img/david.png) no-repeat;
+    background: url(/assets/img/portada.JPEG) no-repeat;
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
@@ -155,5 +156,39 @@ body{
     
 } 
 
+.welcome{
+    color: #fff;
+    font-family:'Shadows Into Light',cursive;
+    font-size: 50px;
+    padding: 1rem;
+}
 
+.name{
+    color: #fff;
+    font-size: 80px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    font-weight: 700; 
+    padding: 1rem;
+}
 
+.info{
+    font-size: 30px;
+    color: #fff;
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 25px;
+    font-family: 'Shadows Into Light',cursive;
+    padding: 1rem;
+}
+
+.social-icon{
+    margin-bottom: 0;
+    li{
+        list-style: none;
+        display: inline;
+        font-size: 0.75rem;
+        margin-right: 2rem; 
+    }
+
+}
