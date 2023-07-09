@@ -49,36 +49,46 @@ body{
     .home-cta{
         flex: 1;
         padding: 4rem 0;
-        .cta-text{
-            color: components.$primary-color;
-        }
-        
-        .home-title{
-            margin: 14rem 0;
-            width: 20rem;
-            font-size: 3rem;
-            color: white;
-
-        }
-        .home-description{
-            width: 300px;
-            font-weight: 800;
-            color: white;
-
-            
-        }
-
-        .lead-magnet{
-            .input-col{
-                max-width: 200px;
-            }
-            
-        }
-
         .btn-main{
             animation: floating 2s ease-in-out infinite;
         }
         
+    }
+
+    .welcome{
+        color: #fff;
+        font-family:'Shadows Into Light',cursive;
+        font-size: 50px;
+        padding: 1rem;
+    }
+
+    .info{
+        font-size: 30px;
+        color: #fff;
+        font-weight: 400;
+        line-height: 30px;
+        margin-bottom: 25px;
+        font-family: 'Shadows Into Light',cursive;
+        padding: 1rem;
+    }
+
+    .name{
+        color: #fff;
+        font-size: 80px;
+        letter-spacing: 10px;
+        text-transform: uppercase;
+        font-weight: 700; 
+        padding: 1rem;
+        white-space: nowrap;
+        border-right: 4px solid;
+        width: 18ch;
+        animation:typing 4s infinite steps(14),blink .5s infinite step-end alternate;
+        overflow: hidden;
+        margin: 0 auto;
+        position: relative;
+        &::after {
+            content: ""; 
+          }
     }
     
 }
@@ -155,28 +165,9 @@ body{
     
 } 
 
-.welcome{
-    color: #fff;
-    font-family:'Shadows Into Light',cursive;
-    font-size: 50px;
-    padding: 1rem;
-}
 
-.name{
-    color: #fff;
-    font-size: 80px;
-    letter-spacing: 10px;
-    text-transform: uppercase;
-    font-weight: 700; 
-    padding: 1rem;
-    white-space: nowrap;
-    border-right: 4px solid;
-    width: 19ch;
-    animation:typing 4s  steps(14),blink .5s infinite step-end alternate;
-    overflow: hidden;
-    margin: 0 auto;
 
-}
+
 @keyframes typing{
     from{
         width:0;
@@ -203,15 +194,6 @@ body{
     }
   }
 
-.info{
-    font-size: 30px;
-    color: #fff;
-    font-weight: 400;
-    line-height: 30px;
-    margin-bottom: 25px;
-    font-family: 'Shadows Into Light',cursive;
-    padding: 1rem;
-}
 
 .social-icon{
     margin-bottom: 0;
@@ -441,4 +423,54 @@ body{
             }
         }
     }
+
+    .sec-home{
+        align-items: center;
+        .welcome{
+            font-size: 30px;
+            
+        }
+    
+        .info{
+            font-size: 20px;
+        }
+
+        .name{
+            font-size: 18px;
+            width: 29ch;
+            animation: none; 
+        
+        } 
+    }
+
+    .sec-contact{
+        padding: 20px;
+    }
+
+    .sec-footer-cta{
+        padding: 3rem;
+    }
+
+    .contact-form-area{
+        padding: 30px 40px;
+    
+        h2 {
+          font-size: 14px;
+        }
+    }
+
+    
+    .footer-right-contact {
+        margin-top: 10px;
+        .single-contact {
+          margin: 4px 12px;
+          padding: 2px 35px;
+          
+          p {
+            font-size: 12px;
+          }
+        }
+      }
+
+    
 }
