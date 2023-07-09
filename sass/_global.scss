@@ -169,11 +169,10 @@ body{
     text-transform: uppercase;
     font-weight: 700; 
     padding: 1rem;
-    //display: block;
     white-space: nowrap;
     border-right: 4px solid;
     width: 19ch;
-    animation:typing 4s infinite steps(14),blink .5s infinite step-end alternate;
+    animation:typing 4s  steps(14),blink .5s infinite step-end alternate;
     overflow: hidden;
     margin: 0 auto;
 
@@ -220,7 +219,7 @@ body{
         list-style: none;
         display: inline;
         font-size: 0.75rem;
-        margin-right: 2rem; 
+        margin-right: 1rem; 
     }
 
 }
@@ -415,4 +414,31 @@ body{
         font-weight: 500;
     }
     
+}
+
+@media(max-width:768px){
+    .sec-onboarding{
+        text-align: center;
+        .steps{
+            flex-direction: column;
+            .icon-desc{
+                .title{
+                    text-align: center;
+                }
+            }
+        }
+    }
+   
+    
+    .sec-benefits{
+        .intro {
+            h3{
+                font-size: 2rem;
+                text-align: center;
+            }
+            p{
+                font-size: 1rem;
+            }
+        }
+    }
 }

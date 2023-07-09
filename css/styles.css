@@ -57,7 +57,7 @@
 }
 
 .icon-facebook i {
-  font-size: 1.25rem;
+  font-size: 1rem;
   color: black;
   padding: 0.4rem 0.65rem;
   border-radius: 50%;
@@ -70,7 +70,7 @@
 }
 
 .icon-instagram i {
-  font-size: 1.25rem;
+  font-size: 1rem;
   color: black;
   padding: 0.4rem 0.65rem;
   border-radius: 50%;
@@ -83,7 +83,7 @@
 }
 
 .icon-linkedin i {
-  font-size: 1.25rem;
+  font-size: 1rem;
   color: black;
   padding: 0.4rem 0.65rem;
   border-radius: 50%;
@@ -96,7 +96,7 @@
 }
 
 .icon-whatsapp i {
-  font-size: 1.25rem;
+  font-size: 1rem;
   color: black;
   padding: 0.4rem 0.65rem;
   border-radius: 50%;
@@ -339,7 +339,7 @@ body {
   white-space: nowrap;
   border-right: 4px solid;
   width: 19ch;
-  animation: typing 4s infinite steps(14), blink 0.5s infinite step-end alternate;
+  animation: typing 4s steps(14), blink 0.5s infinite step-end alternate;
   overflow: hidden;
   margin: 0 auto;
 }
@@ -382,7 +382,7 @@ body {
   list-style: none;
   display: inline;
   font-size: 0.75rem;
-  margin-right: 2rem;
+  margin-right: 1rem;
 }
 
 .sec-services {
@@ -545,6 +545,25 @@ body {
   margin-top: 20px;
   color: #fff;
   font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .sec-onboarding {
+    text-align: center;
+  }
+  .sec-onboarding .steps {
+    flex-direction: column;
+  }
+  .sec-onboarding .steps .icon-desc .title {
+    text-align: center;
+  }
+  .sec-benefits .intro h3 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .sec-benefits .intro p {
+    font-size: 1rem;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
