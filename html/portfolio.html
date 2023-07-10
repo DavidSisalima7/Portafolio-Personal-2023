@@ -12,25 +12,26 @@
     />
 </head>
 <body>
+        <nav class="nav">
+            <div class="logo">
+                <a href="#">
+                    <img src="/assets/img/logo_blanco.png" alt="logo">
+                </a>
+            </div>
+            <div class="menu">
+                <ul class="main-menu d-none d-md-flex">
+                    <li><a href="#home" class="active">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#services">SERVICES</a></li>
+                    <li><a href="#skills">SKILLS</a></li>
+                    <li><a href="#work">WORK</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                  </ul>
+            </div>
+        </nav>
+
     
-    <nav class="nav">
-        <div class="logo">
-            <a href="#">
-                <img src="/assets/img/logo_blanco.png" alt="logo">
-            </a>
-        </div>
-        <div class="menu">
-            <ul class="main-menu d-none d-md-flex">
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="#">SERVICES</a></li>
-                <li><a href="#">SKILLS</a></li>
-                <li><a href="#">WORK</a></li>
-                <li><a href="#">CONTACT</a></li>
-              </ul>
-        </div>
-    </nav>
-    <section class="sec-home">
+    <section id="home" class="sec-home">
         <div class="home-cta">
             <div class="container">
                 <div class="row">
@@ -63,7 +64,7 @@
         </div>
       </section>
 
-    <section class="sec-fueatures">
+    <section id="about" class="sec-fueatures">
         <div class="intro">
             <h3>Tecnologías que Impulso como Desarrollador</h3>
             <p>En mi trabajo como desarrollador, utilizo diversas tecnologías para crear soluciones digitales eficientes y modernas. Algunas de las tecnologías con las que trabajo incluyen.</p>
@@ -110,7 +111,7 @@
         </div>
     </section>
 
-    <section class="sec-services">
+    <section id="services" class="sec-services">
         <div class="intro">
             <h3>Diferentes servicios</h3>
             <p>Bienvenido estoy aquí para transformar las diferentes ideas en soluciones digitales de vanguardia.</p>
@@ -158,8 +159,17 @@
             </div>
           </div>
     </section>
+    <section id="skills" class="sec-skills row">
+
+        <div style="text-align: center; font-size: larger; font-weight: 700; padding: 1rem;">
+            
+            Skills
+            <div class="step-separator">
+
+            </div>
+        </div>
+   
     
-    <section class="sec-skills row">
         <div class="kpi col-md">
             <img src="/assets/img/java.png" alt="java">
         </div>
@@ -183,7 +193,7 @@
          </div>
     </section>
 
-    <section class="sec-galeria">
+    <section id="work" class="sec-galeria">
         <div class="intro">
           <h3>Proyectos academicos y personales</h3>
           <p>Comparto con ustedes una colección de proyectos académicos y personales. Aquí encontrarán el codigo fuente de trabajos que reflejan mi compromiso con la innovación, la creatividad y el desarrollo tecnológico.</p>
@@ -222,43 +232,47 @@
     </div>
       </section>
 
-      <section class="sec-contact">
+      <section id="contact" class="sec-contact">
         <div class="row contact-form-area wow fadeInUp">
             <div class="col-md-6 col-lg-6 col-sm-12">
             <div class="contact-block">
             <h2>Formulario de contacto</h2> 
             <br>
-            <form id="contactForm" form class="row g-3">
+            <form id="contactForm" form class="row g-3" action="https://formsubmit.co/davisisalima@gmail.com" method="POST" />
             <div class="row">
             <div class="col-md-6">
             <div  class="form-floating mb-3" class="form-group">
-            <input type="text" class="form-control" id="name" name="name" placeholder="Name" required="" data-error="Please enter your name">
+            <input type="text" class="form-control" id="name" name="name" required="">
             <label style="color:#848181;" for="floatingInput">Nombre</label>
             <div class="help-block with-errors"></div>
             </div>
             </div>
             <div class="col-md-6">
                 <div  class="form-floating mb-3" class="form-group">
-                    <input type="text" class="form-control" id="name" name="name" placeholder="Name" required="" data-error="Please enter your name">
+                    <input type="email" class="form-control" id="email" name="email"  required="">
                     <label style="color:#848181;" for="floatingInput">Correo electrónico</label>
                     <div class="help-block with-errors"></div>
                     </div>
             </div>
             <div class="col-md-12">
                 <div  class="form-floating mb-3" class="form-group">
-                    <input  type="text" class="form-control" id="name" name="name" placeholder="Name" required="" data-error="Please enter your name">
+                    <input  type="text" class="form-control" id="subject" name="subject" required="" >
                     <label style="color:#848181;" for="floatingInput">Asunto</label>
                     <div class="help-block with-errors"></div>
                     </div>
             </div>
             <div class="col-md-12">
                 <div  class="form-floating mb-3" class="form-group">
-                    <textarea class="form-control" id="message" placeholder="Your Message" rows="5" data-error="Write your message" required=""></textarea>
+                    <textarea class="form-control" id="message" name="message" rows="5"  required=""></textarea>
                     <label style="color:#848181;" for="floatingInput">Tu mensaje</label>
                     <div class="help-block with-errors"></div>
                     </div>
+
+                   
             <div class="submit-button">
-            <button class="btn-main disabled" id="submit" type="submit" style="pointer-events: all; cursor: pointer;">Send Message</button>
+            <button class="btn-main disabled" id="submit" type="submit" style="pointer-events: all; cursor: pointer;">Enviar Mensaje</button>
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500/html/portfolio.html#contact">
+            <input type="hidden" name="_captcha" value="false">
             <div id="msgSubmit" class="h3 text-center hidden"></div>
             <div class="clearfix"></div>
             </div>
@@ -329,14 +343,39 @@
         </div>
         </div>
         </footer>
-        <script>
+
+    <!--  Script para descargar el CV -->
+    <script>
             function downloadCV() {
               var link = document.createElement('a');
               link.href = '/assets/img/CV-David-Sisalima.pdf'; // Reemplaza con la ruta de tu CV en PDF
               link.download = 'CV_David-Sisalima.pdf'; // Nombre del archivo de descarga
               link.click();
             }
-            </script>
+    </script>
+
+    <!-- Script para que se ilumine el navbar segun vaya haciendo scroll -->
+    <script>
+    const menuLinks = document.querySelectorAll('.main-menu a');
+    function setActiveLink() {
+        const currentPosition = window.pageYOffset;
+    menuLinks.forEach(link => {
+        const section = document.querySelector(link.getAttribute('href'));
+    if (section.offsetTop <= currentPosition && section.offsetTop + section.offsetHeight > currentPosition) {
+      link.classList.add('active');
+    } else {
+      link.classList.remove('active');
+    }
+  });
+}
+
+// Ejecuta la función al cargar la página y en cada evento de scroll
+window.addEventListener('load', setActiveLink);
+window.addEventListener('scroll', setActiveLink);
+    </script>
+
+    <!-- Script para mostrar el mensaje de envio de formulario -->
+   
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
 </html>

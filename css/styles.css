@@ -56,6 +56,15 @@
   color: #00B4D9;
 }
 
+.main-menu a.active::before {
+  transform: scaleX(1);
+  visibility: visible;
+}
+
+.main-menu a.active {
+  color: #00B4D9;
+}
+
 .icon-facebook i {
   font-size: 1rem;
   color: black;
@@ -187,6 +196,10 @@
 .benefit .description .text {
   color: #888;
   font-weight: 600;
+}
+
+* {
+  scroll-behavior: smooth;
 }
 
 html {
@@ -389,6 +402,11 @@ body {
   color: white;
   padding: 4rem;
 }
+.sec-skills .step-separator {
+  flex: 1;
+  border-top: 2px solid #ddd;
+  margin: 0 1rem;
+}
 .sec-skills .kpi {
   display: flex;
   flex-direction: column;
@@ -549,7 +567,7 @@ body {
     font-size: 1rem;
   }
   .sec-home {
-    align-items: center;
+    text-align: center;
   }
   .sec-home .welcome {
     font-size: 30px;

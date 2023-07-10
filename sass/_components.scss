@@ -78,10 +78,21 @@ $primary-color: #00B4D9;
         &:hover{
             color:$primary-color;
         }
+
     }
 
    
 }
+
+.main-menu a.active::before {
+    transform: scaleX(1);
+    visibility: visible;
+  }
+  
+  .main-menu a.active {
+    color: $primary-color;
+  }
+  
 
 .icon-facebook{
     i{

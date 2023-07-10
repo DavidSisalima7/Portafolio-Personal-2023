@@ -6,6 +6,9 @@
     padding: 3rem;
 }
 
+*{
+    scroll-behavior: smooth;
+}
 html{
     min-width: 100vw;
 }
@@ -230,6 +233,11 @@ body{
     background-position:0%;
     color: white;
     padding: 4rem; 
+    .step-separator{
+        flex: 1;
+        border-top: 2px solid #ddd;
+        margin: 0 1rem;
+    }
     .kpi{
         display: flex;
         flex-direction: column;
@@ -425,7 +433,7 @@ body{
     }
 
     .sec-home{
-        align-items: center;
+       text-align: center;
         .welcome{
             font-size: 30px;
             
