@@ -221,7 +221,8 @@ body {
   height: 5.6rem;
   border-bottom: solid 1px #ddd;
   align-items: center;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px); /* Aplica un efecto de desenfoque al fondo del navbar (opcional) */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2509803922);
   font-weight: 600;
 }
