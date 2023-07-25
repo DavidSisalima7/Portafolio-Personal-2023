@@ -596,11 +596,15 @@ body {
   }
   .sec-skills {
     background: #00B4D9;
+    height: auto;
   }
   .sec-skills .kpi img {
     max-width: 6rem;
-    height: 3rem;
+    height: auto;
     animation: none;
+  }
+  .sec-galeria .intro h3 {
+    text-align: center;
   }
 }
 
