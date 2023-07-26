@@ -15,6 +15,10 @@
     border-radius: 50%;
     box-shadow: 0 0 10px #00000040;
     background-color: white;
+    width: 36px;
+    height: 36px;
+    display: inline-block;
+    align-items: center;
 }
 //Variables
 $primary-color: #00B4D9;
@@ -95,6 +99,7 @@ $primary-color: #00B4D9;
   
 
 .icon-facebook{
+   
     i{
         @include btn-global();
         &:hover{
