@@ -58,18 +58,28 @@ body{
 
     .welcome{
         color: #fff;
-        font-size: 50px;
+        font-size: 20px;
+        letter-spacing: 10px;
+        text-transform: uppercase;
+        font-weight: 700; 
         padding: 1rem;
+        white-space: nowrap;
+        margin: 0 auto;
+        position: relative;
+    
     }
 
     .info{
-        font-size: 30px;
         color: #fff;
-        font-weight: 400;
-        line-height: 30px;
-        margin-bottom: 25px;
-        font-family: 'Shadows Into Light',cursive;
+        font-size: 17px;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        font-weight: 700; 
         padding: 1rem;
+        white-space: nowrap;
+        margin: 0 auto;
+        position: relative;
+    
     }
 
     .name{
@@ -431,14 +441,24 @@ body{
     }
 
     .sec-home{
+        opacity: 0.9;
        text-align: center;
         .welcome{
-            font-size: 30px;
-            
+            letter-spacing: 6px;
+            font-size: 15px;
+            width: 29ch;
+            font-weight: 400; 
+           
         }
     
         .info{
-            font-size: 20px;
+            color: #fff;
+            font-size: 11px;
+            letter-spacing: 3px;
+            white-space: break-spaces;
+            
+           
+            
         }
 
         .name{

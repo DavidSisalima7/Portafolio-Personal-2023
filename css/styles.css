@@ -269,17 +269,25 @@ body {
 }
 .sec-home .welcome {
   color: #fff;
-  font-size: 50px;
+  font-size: 20px;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  font-weight: 700;
   padding: 1rem;
+  white-space: nowrap;
+  margin: 0 auto;
+  position: relative;
 }
 .sec-home .info {
-  font-size: 30px;
   color: #fff;
-  font-weight: 400;
-  line-height: 30px;
-  margin-bottom: 25px;
-  font-family: "Shadows Into Light", cursive;
+  font-size: 17px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font-weight: 700;
   padding: 1rem;
+  white-space: nowrap;
+  margin: 0 auto;
+  position: relative;
 }
 .sec-home .name {
   color: #fff;
@@ -575,13 +583,20 @@ body {
     font-size: 1rem;
   }
   .sec-home {
+    opacity: 0.9;
     text-align: center;
   }
   .sec-home .welcome {
-    font-size: 30px;
+    letter-spacing: 6px;
+    font-size: 15px;
+    width: 29ch;
+    font-weight: 400;
   }
   .sec-home .info {
-    font-size: 20px;
+    color: #fff;
+    font-size: 11px;
+    letter-spacing: 3px;
+    white-space: break-spaces;
   }
   .sec-home .name {
     font-size: 18px;
